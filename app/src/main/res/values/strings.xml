@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Jewellers Invoice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_invoice_title">New Invoice</string>
+    <string name="hint_recipient_name">Company Name / Contact Name</string>
+    <string name="hint_recipient_email" >Email</string>
+    <string name="hint_recipient_phone">Phone Number</string>
+    <string name="hint_recipient_street">Street Address</string>
+    <string name="hint_recipient_suite">Apartment/Suite/Unit</string>
+    <string name="hint_recipient_city">City</string>
+    <string name="hint_recipient_zip">Postal/Zip Code</string>
+    <string name="hint_recipient_country">Country</string>
+</resources>
