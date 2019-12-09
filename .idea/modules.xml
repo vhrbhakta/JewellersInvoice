@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Gold_API_App-JewellersInvoice.iml" filepath="$PROJECT_DIR$/Gold_API_App-JewellersInvoice.iml" />
       <module fileurl="file://$PROJECT_DIR$/JewellersInvoice.iml" filepath="$PROJECT_DIR$/JewellersInvoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/JewellersInvoice-app.iml" filepath="$PROJECT_DIR$/app/JewellersInvoice-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
