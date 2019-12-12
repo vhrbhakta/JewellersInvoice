@@ -1,33 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".EditUserCompany">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InvoiceItems">
     <data/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/userBusinessName"
+            android:id="@+id/itemName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_weight="1"
             android:background="@android:drawable/editbox_background"
             android:ems="10"
-            android:hint="@string/hint_user_business_name"
+            android:hint="@string/hint_item_name"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:importantForAutofill="no" />
+            app:layout_constraintTop_toBottomOf="@+id/currentGoldLabel" />
 
         <EditText
-            android:id="@+id/userPhone"
+            android:id="@+id/itemQuantity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -35,17 +33,14 @@
             android:layout_marginEnd="16dp"
             android:background="@android:drawable/editbox_background"
             android:ems="10"
-
-            android:hint="@string/hint_recipient_phone"
-            android:importantForAutofill="no"
-            android:inputType="phone"
-
+            android:hint="@string/hint_item_quantity"
+            android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userBusinessName" />
+            app:layout_constraintTop_toBottomOf="@+id/itemName" />
 
         <EditText
-            android:id="@+id/userStreetAddress"
+            android:id="@+id/itemWeight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -53,94 +48,71 @@
             android:layout_marginEnd="16dp"
             android:background="@android:drawable/editbox_background"
             android:ems="10"
-
-            android:hint="@string/hint_recipient_street"
-            android:importantForAutofill="no"
-            android:inputType="text"
+            android:hint="@string/hint_item_weight"
+            android:inputType="numberDecimal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userPhone" />
-
-        <EditText
-            android:id="@+id/userSuite"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:drawable/editbox_background"
-            android:ems="10"
-
-            android:hint="@string/hint_recipient_suite"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userStreetAddress" />
-
-        <EditText
-            android:id="@+id/userCity"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:drawable/editbox_background"
-            android:ems="10"
-
-            android:hint="@string/hint_recipient_city"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userSuite" />
-
-        <EditText
-            android:id="@+id/userZip"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:drawable/editbox_background"
-            android:ems="10"
-
-            android:hint="@string/hint_recipient_zip"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userCity" />
-
-        <EditText
-            android:id="@+id/userCountry"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:background="@android:drawable/editbox_background"
-            android:ems="10"
-
-            android:hint="@string/hint_recipient_country"
-            android:importantForAutofill="no"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/userZip" />
+            app:layout_constraintTop_toBottomOf="@+id/itemQuantity" />
 
         <Button
-            android:id="@+id/buttonSaveSettings"
+            android:id="@+id/addItemButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/button_add_item"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemMarkUp" />
+
+        <Button
+            android:id="@+id/buttonItemsAdded"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-
-            android:text="@string/button_save_settings"
+            android:text="@string/button_all_items_added"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <EditText
+            android:id="@+id/itemMarkUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:drawable/editbox_background"
+            android:ems="10"
+            android:hint="@string/hint_item_markup"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemWeight" />
+
+        <TextView
+            android:id="@+id/currentGoldLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/currentGoldLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/goldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="$$$$"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/currentGoldLabel"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

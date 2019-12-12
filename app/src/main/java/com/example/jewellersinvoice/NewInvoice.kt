@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.example.jewellersinvoice.databinding.FragmentNewInvoiceBinding
 
 class NewInvoice : Fragment() {
@@ -16,9 +17,12 @@ class NewInvoice : Fragment() {
     ): View? {
         val binding: FragmentNewInvoiceBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_new_invoice, container, false)
 
+        binding.buttonToInvoiceItems.setOnClickListener(){view:View->
+            view.findNavController().navigate(NewInvoiceDirections.actionNewInvoiceToInvoiceItems())
+        }
+
         return binding.root
-        // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_new_invoice, container, false)
+
     }
 
 

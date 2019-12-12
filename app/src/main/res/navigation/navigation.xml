@@ -25,10 +25,43 @@
         android:id="@+id/newInvoice"
         android:name="com.example.jewellersinvoice.NewInvoice"
         android:label="New Invoice"
-        tools:layout="@layout/fragment_new_invoice" />
+        tools:layout="@layout/fragment_new_invoice" >
+        <action
+            android:id="@+id/action_newInvoice_to_invoiceItems"
+            app:destination="@id/invoiceItems"
+            app:popUpTo="@+id/newInvoice" />
+    </fragment>
     <fragment
         android:id="@+id/editUserCompany"
         android:name="com.example.jewellersinvoice.EditUserCompany"
         android:label="Profile Settings"
-        tools:layout="@layout/fragment_edit_user_company" />
+        tools:layout="@layout/fragment_edit_user_company" >
+        <action
+            android:id="@+id/action_editUserCompany_to_myInvoices"
+            app:destination="@id/myInvoices" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceItems"
+        android:name="com.example.jewellersinvoice.InvoiceItems"
+        android:label="Add Items"
+        tools:layout="@layout/fragment_invoice_items" >
+        <action
+            android:id="@+id/action_invoiceItems_to_applicableTax"
+            app:destination="@id/applicableTax"
+            app:popUpTo="@+id/invoiceItems" />
+    </fragment>
+    <fragment
+        android:id="@+id/applicableTax"
+        android:name="com.example.jewellersinvoice.ApplicableTax"
+        android:label="Taxes"
+        tools:layout="@layout/fragment_applicable_tax">
+        <action
+            android:id="@+id/action_applicableTax_to_invoiceVisuallizer"
+            app:destination="@id/invoiceVisuallizer" />
+    </fragment>
+    <fragment
+        android:id="@+id/invoiceVisuallizer"
+        android:name="com.example.jewellersinvoice.InvoiceVisuallizer"
+        android:label="Invoice"
+        tools:layout="@layout/fragment_invoice_visuallizer" />
 </navigation>
