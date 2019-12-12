@@ -1,4 +1,4 @@
-package com.example.jewellersinvoice.InvoiceTracker
+package com.example.jewellersinvoice.invoiceTracker
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

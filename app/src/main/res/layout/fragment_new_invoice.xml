@@ -7,14 +7,14 @@
     <data>
         <variable
             name="InvoiceTrackerViewModel"
-            type="com.example.jewellersinvoice.InvoiceTracker.InvoiceTrackerViewModel" />
+            type="com.example.jewellersinvoice.invoiceTracker.InvoiceTrackerViewModel" />
     </data>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".InvoiceTracker.NewInvoice">
+        tools:context=".invoiceTracker.NewInvoice">
 
         <TextView
             android:id="@+id/createInvoiceTitle"
