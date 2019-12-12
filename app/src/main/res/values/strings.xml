@@ -3,13 +3,26 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="new_invoice_title">New Invoice</string>
+    <string name="new_invoice_title">Customer Information</string>
     <string name="hint_recipient_name">Company Name / Contact Name</string>
-    <string name="hint_recipient_email" >Email</string>
+    <string name="hint_recipient_email">Email</string>
     <string name="hint_recipient_phone">Phone Number</string>
     <string name="hint_recipient_street">Street Address</string>
     <string name="hint_recipient_suite">Apartment/Suite/Unit</string>
     <string name="hint_recipient_city">City</string>
     <string name="hint_recipient_zip">Postal/Zip Code</string>
     <string name="hint_recipient_country">Country</string>
+    <string name="buttonTextToInvoiceItems">Continue</string>
+    <string name="hint_item_name">Item Name/Description</string>
+    <string name="hint_item_quantity">Quantity</string>
+    <string name="hint_item_weight">Item Weight</string>
+    <string name="button_add_item">Add Item</string>
+    <string name="button_all_items_added">Continue</string>
+    <string name="hint_user_business_name">Business Name</string>
+    <string name="button_save_settings">Save Changes</string>
+    <string name="hint_item_markup">Mark Up %</string>
+    <string name="currentGoldLabel">Current Price of Gold :</string>
+    <string name="applicable_tax_label">Enter percentage of applicable Tax :</string>
+    <string name="hint_applicable_tax">Tax %</string>
+    <string name="button_generate_invoice">Generate Invoice</string>
 </resources>
