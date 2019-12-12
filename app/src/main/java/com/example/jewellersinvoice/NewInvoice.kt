@@ -1,4 +1,4 @@
-package com.example.jewellersinvoice.invoiceTracker
+package com.example.jewellersinvoice
 
 
 import android.os.Bundle
@@ -20,15 +20,6 @@ class NewInvoice : Fragment() {
     ): View? {
         val binding: FragmentNewInvoiceBinding = DataBindingUtil.inflate(inflater,
             R.layout.fragment_new_invoice, container, false)
-        val application = requireNotNull(this.activity).application
-        val dataSource = InvoiceDatabase.getInstance(application).invoiceDatabaseDao
-        val viewModelFactory = InvoiceTrackerViewModelFactory(dataSource, application)
-        val invoiceTrackerViewModel =
-            ViewModelProviders.of(
-                this, viewModelFactory).get(InvoiceTrackerViewModel::class.java)
-
-        binding.invoiceTrackerViewModel = invoiceTrackerViewModel
-        binding.setLifecycleOwner(this)
 
         return binding.root
         // Inflate the layout for this fragment

@@ -12,4 +12,15 @@
     <string name="hint_recipient_city">City</string>
     <string name="hint_recipient_zip">Postal/Zip Code</string>
     <string name="hint_recipient_country">Country</string>
+
+    <string name="title"><![CDATA[<h3>HERE IS YOUR INVOICE DATA</h3>]]></string>
+    <string name="customer_name"><![CDATA[<b>Name:</b>]]></string>
+    <string name="customer_email"><![CDATA[<b>Email:</b>]]></string>
+    <string name="customer_phone"><![CDATA[<b>Phone Number:</b>]]></string>
+    <string name="customer_address"><![CDATA[<b>Street Address:</b>]]></string>
+    <string name="customer_suite"><![CDATA[<b>Apartment/Suite/Unit:</b>]]></string>
+    <string name="customer_city"><![CDATA[<b>City:</b>]]></string>
+    <string name="customer_zip"><![CDATA[<b>Postal/Zip Code:</b>]]></string>
+    <string name="customer_country"><![CDATA[<b>Country:</b>]]></string>
+
 </resources>

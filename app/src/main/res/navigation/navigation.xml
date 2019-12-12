@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/myInvoices"
-        android:name="com.example.jewellersinvoice.MyInvoices"
+        android:name="com.example.jewellersinvoice.invoiceTracker.MyInvoices"
         android:label="My Invoices"
         tools:layout="@layout/fragment_my_invoices">
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/newInvoice"
-        android:name="com.example.jewellersinvoice.invoiceTracker.NewInvoice"
+        android:name="com.example.jewellersinvoice.NewInvoice"
         android:label="New Invoice"
         tools:layout="@layout/fragment_new_invoice" />
     <fragment

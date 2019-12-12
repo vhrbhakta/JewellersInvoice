@@ -21,6 +21,9 @@ interface InvoiceDatabaseDao{
     @Query("DELETE FROM customer_info_table")
     fun clear()
 
+    @Query("SELECT * FROM customer_info_table ORDER BY customerID DESC LIMIT 1")
+    fun getNewCustomer(): Customer?
+
     @Query("SELECT * FROM customer_info_table ORDER BY customerID DESC")
     fun getAllCustomers(): LiveData<List<Customer>>
 
