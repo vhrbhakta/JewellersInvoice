@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/newInvoice"
-        android:name="com.example.jewellersinvoice.NewInvoice"
+        android:name="com.example.jewellersinvoice.InvoiceTracker.NewInvoice"
         android:label="New Invoice"
         tools:layout="@layout/fragment_new_invoice" />
     <fragment
