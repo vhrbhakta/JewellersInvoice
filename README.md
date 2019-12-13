@@ -8,7 +8,7 @@ Our app is designed to have six fragments.
    * Home page of the app
    * Can edit User's company information
    * Can start new Invoices
-   * ![Screenshot 1](companyInvoice.jpg)
+   * ![My Invoices](companyInvoice2.jpg)
 2. New Invoices
    * Has EditTexts to get User input about the User's customer
    * Can go to Invoice Items
@@ -31,3 +31,4 @@ This app is designed to have calls to an API that will update the current value 
 Retrofit was used to handle the HTTP API calls along with the Gson converter.
 This app is also designed to have a Room Database with ViewModels and ViewModelFactories to pass information between fragments and to get data from the database.
 This app is also designed to have a pdf reader and generator so the User can download the invoices they create.
+* ![API Call](companyInvoice2.jpg)
