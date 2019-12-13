@@ -7,17 +7,20 @@ Our app is designed to have six fragments.
    * Shows a list of previously generated Invoices which are stored and queried from a Room Database.
    * Home page of the app
    * Can edit User's company information
+   * ![Edit Company Info](edit_user_company_frag.jpg)
    * Can start new Invoices
    * ![My Invoices](companyInvoice2.jpg)
 2. New Invoices
    * Has EditTexts to get User input about the User's customer
    * Can go to Invoice Items
+   * ![Create New Invoice](new_invoice_frag.jpg)
 3. Invoice Items
    * Has EditTexts to get User input about the customer's purchase items and pricing.
    * Can go to Applicable Tax
 4. Applicable Tax
    * Has and EditText for Tax input
    * Can go to Invoice Visualizer
+   * ![Applicable Tax Frag](applicable_tax_frag.jpg)
 5. Invoice Visualizer
    * This is where a pdf would show the results the User entered.
 
