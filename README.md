@@ -1,7 +1,7 @@
-# JewellersInvoice
+# JewelersInvoice
 An android app that helps jewelers make invoices based on the current price of jewelry using an API to get the current price.
 
-## Jewellery Invoices
+## Jewelry Invoices
 Our app is designed to have six fragments. 
 1. My Invoices
    * Shows a list of previously generated Invoices which are stored and queried from a Room Database.
@@ -21,4 +21,11 @@ Our app is designed to have six fragments.
    * This is where a pdf would show the results the User entered.
 
 6. Edit User Company
-   * User can enter and edit details about their company as a Jewellery Store/Seller
+   * User can enter and edit details about their company as a Jewelry Store/Seller
+
+
+## More Details
+
+This app is designed to have calls to an API that will update the current value of specific jewelry items. This API call would replace the values in the Invoice Items fragment.
+This app is also designed to have a Room Database with ViewModels and ViewModelFactories to pass information between fragments and to get data from the database.
+This app is also designed to have a pdf reader and generator so the User can download the invoices they create.
