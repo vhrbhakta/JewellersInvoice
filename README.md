@@ -27,8 +27,20 @@ Our app is designed to have six fragments.
 
 ## More Details
 
-This app is designed to have calls to an API that will update the current value of specific jewelry items. This API call would replace the values in the Invoice Items fragment.
+This app is designed to have calls to an API that will update the current value of specific jewelry items. 
+
+This API call would replace the values in the Invoice Items fragment.
+
+For the API , Metals-API was used : https://metals-api.com/api
+with endpoint: latest?access_key=API_KEY&base=XAU&symbols=USD
+
+This JSON API consists on a currency converter from which we can get the value of any precious metal or even get the conversion among different currencies.
+We use the base codes , XAU for Gold, to get the value from said currency. 
+The endpoint used returns various values like a unique UNIX timestamp, whether it was successful, the date , the base currency, the rate of the base currency on the selected currency and the unit. 
+
 Retrofit was used to handle the HTTP API calls along with the Gson converter.
+
 This app is also designed to have a Room Database with ViewModels and ViewModelFactories to pass information between fragments and to get data from the database.
+
 This app is also designed to have a pdf reader and generator so the User can download the invoices they create.
 * ![API Call](updateAPI.jpg)
