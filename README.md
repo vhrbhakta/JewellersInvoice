@@ -5,11 +5,11 @@ An android app that helps jewelers make invoices based on the current price of j
 Our app is designed to have six fragments. 
 1. My Invoices
    * Shows a list of previously generated Invoices which are stored and queried from a Room Database.
+   * ![My Invoices](companyInvoice2.jpg)
    * Home page of the app
    * Can edit User's company information
    * ![Edit Company Info](edit_user_company_frag.jpg)
    * Can start new Invoices
-   * ![My Invoices](companyInvoice2.jpg)
 2. New Invoices
    * Has EditTexts to get User input about the User's customer
    * Can go to Invoice Items
