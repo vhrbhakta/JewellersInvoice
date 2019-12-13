@@ -10,6 +10,7 @@
         android:name="com.example.jewellersinvoice.invoiceTracker.MyInvoices"
         android:label="My Invoices"
         tools:layout="@layout/fragment_my_invoices">
+
         <action
             android:id="@+id/action_myInvoices_to_newInvoice"
             app:destination="@id/newInvoice"
@@ -23,9 +24,16 @@
     </fragment>
     <fragment
         android:id="@+id/newInvoice"
-        android:name="com.example.jewellersinvoice.NewInvoice"
+        android:name="com.example.jewellersinvoice.newInvoicePackage.NewInvoice"
         android:label="New Invoice"
-        tools:layout="@layout/fragment_new_invoice" />
+        tools:layout="@layout/fragment_new_invoice" >
+        <argument
+            android:name="customerKey"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_newInvoice_to_myInvoices"
+            app:destination="@id/myInvoices" />
+    </fragment>
     <fragment
         android:id="@+id/editUserCompany"
         android:name="com.example.jewellersinvoice.EditUserCompany"

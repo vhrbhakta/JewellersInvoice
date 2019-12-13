@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 //import com.example.jewellersinvoice.MyInvoicesDirections
 import com.example.jewellersinvoice.R
 import com.example.jewellersinvoice.database.InvoiceDatabase
@@ -19,6 +21,7 @@ class MyInvoices : Fragment() {
         setHasOptionsMenu(true)
 
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -35,11 +38,20 @@ class MyInvoices : Fragment() {
 
         binding.invoiceTrackerViewModel = invoiceTrackerViewModel
         binding.setLifecycleOwner(this)
+        invoiceTrackerViewModel.navigateToNewInvoice.observe(this, Observer {
+                customer ->
+            customer?.let {
+                this.findNavController().navigate(
+                    MyInvoicesDirections
+                        .actionMyInvoicesToNewInvoice(customer.customerID))
 
+                invoiceTrackerViewModel.doneNavigating()
+            }
+        })
         // Navigate to Create Invoice Fragment
-        binding.buttonToNewInvoice.setOnClickListener(){view:View->
-            view.findNavController().navigate(MyInvoicesDirections.actionMyInvoicesToNewInvoice())
-        }
+//        binding.buttonToNewInvoice.setOnClickListener(){view:View->
+//            view.findNavController().navigate(MyInvoicesDirections.actionMyInvoicesToNewInvoice())
+//        }
 
         // Inflate the layout for this fragment
         return binding.root

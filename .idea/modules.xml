@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/JewellersInvoice.iml" filepath="$PROJECT_DIR$/JewellersInvoice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/JewellersInvoice-app.iml" filepath="$PROJECT_DIR$/app/JewellersInvoice-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/working_on_storage_branch-JewellersInvoice.iml" filepath="$PROJECT_DIR$/working_on_storage_branch-JewellersInvoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/working_on_storage_branch-JewellersInvoice-app.iml" filepath="$PROJECT_DIR$/app/working_on_storage_branch-JewellersInvoice-app.iml" />
     </modules>
   </component>
 </project>
