@@ -16,6 +16,7 @@ Our app is designed to have six fragments.
    * ![Create New Invoice](new_invoice_frag.jpg)
 3. Invoice Items
    * Has EditTexts to get User input about the customer's purchase items and pricing.
+   * ![API Call](updateAPI.jpg)
    * Can go to Applicable Tax
 4. Applicable Tax
    * Has and EditText for Tax input
@@ -46,4 +47,3 @@ Retrofit was used to handle the HTTP API calls along with the Gson converter.
 This app is also designed to have a Room Database with ViewModels and ViewModelFactories to pass information between fragments and to get data from the database.
 
 This app is also designed to have a pdf reader and generator so the User can download the invoices they create.
-* ![API Call](updateAPI.jpg)
