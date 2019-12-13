@@ -8,6 +8,7 @@ Our app is designed to have six fragments.
    * Home page of the app
    * Can edit User's company information
    * Can start new Invoices
+   ![Screenshot 1](companyInvoice.jpg)
 2. New Invoices
    * Has EditTexts to get User input about the User's customer
    * Can go to Invoice Items
