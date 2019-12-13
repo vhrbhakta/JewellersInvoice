@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JewellersInvoice.iml" filepath="$PROJECT_DIR$/JewellersInvoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JewellersInvoice_-JewellersInvoice.iml" filepath="$PROJECT_DIR$/JewellersInvoice_-JewellersInvoice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/JewellersInvoice_-app.iml" filepath="$PROJECT_DIR$/app/JewellersInvoice_-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
